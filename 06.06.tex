@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{amsfonts}
+
+\newcommand{\upRiemannint}[2]{
+  \overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+  \underline{\int_{#1}^{#2}}
+}
+
+\title{Homework 14}
+
+\author{Jilin Guo}
+
+\date{February 27, 2015}
+
+\begin{document}
+\maketitle
+
+\section*{Exercise 6}
+\subsection*{6.06 Let $X$  have the pdf given in Exercise 1. Find the transformation $y = u(x)$ such that $Y = u(X)\sim UNIF(0,1)$.}
+
+Given $f(x) = 4x^3 * 1\{0<x<1\}$, then the CDF of $f(x)$ is
+
+\begin{center}
+$F(x) = \int_0^x 4t^3 dt = x^4 * 1\{0<x<1\}$
+\end{center}
+
+Then by the Theorem 6.3.3 Probability Integral Transformation, since $F(x)$ is continuous on $(0,1)$, $Y = X^4$ is the transformation such that $Y \sim UNIF(0,1)$.
+
+\end{document}
